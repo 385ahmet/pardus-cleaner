@@ -25,13 +25,13 @@ Pardus için geliştirilmiş bir disk temizleme uygulaması.
 ## Kullanım
 
 ```bash
-cd && cd pardus-cleaner && /usr/bin/python3 src/Main.py
+cd && git clone https://github.com/385ahmet/pardus-cleaner && cd pardus-cleaner && /usr/bin/python3 src/Main.py
 ```
 
 ## .deb Paketi Kurulumu
 
 ```bash
-cd && cd pardus-cleaner && sudo dpkg -i pardus-cleaner_1.0.0-1_all.deb
+cd && git clone https://github.com/385ahmet/pardus-cleaner && cd pardus-cleaner && sudo dpkg -i pardus-cleaner_1.0.0-1_all.deb
 cd && cd pardus-cleaner && sudo apt install -f
 ```
 Yada Pardus ile gelen .deb yükleyiciyi kullanabilirsin.
