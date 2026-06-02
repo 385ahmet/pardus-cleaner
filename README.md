@@ -34,5 +34,6 @@ Pardus için geliştirilmiş bir disk temizleme uygulaması.
 sudo dpkg -i pardus-cleaner_1.0.0-1_all.deb
 sudo apt install -f
 ```
+Yada Pardus ile gelen .deb yükleyiciyi kullanabilirsin.
 
 Kurulumdan sonra menüden "Pardus Cleaner" ile çalıştırabilirsin.
