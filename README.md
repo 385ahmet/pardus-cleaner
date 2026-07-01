@@ -1,18 +1,24 @@
 # Pardus Cleaner
 
-Pardus için geliştirilmiş bir disk temizleme uygulaması.
+Pardus için geliştirilmiş disk temizleme uygulaması.
 
 ## Özellikler
 
 - APT paket önbelleği temizleme
+- Pacman önbelleği temizleme (Arch)
 - Çöp kutusu temizleme
 - Küçük resim önbelleği temizleme
-- pip/npm/AUR önbelleği temizleme
-- Pacman önbelleği temizleme
-- Sistem günlükleri temizleme
+- pip/npm önbelleği temizleme
 - Firefox önbelleği temizleme
+- Sistem günlükleri (journald) temizleme
+- Docker kullanılmayan imageleri temizleme
+- Flatpak kullanılmayan çalışma zamanları temizleme
+- Snap önbelleği temizleme
 - Genel uygulama önbelleği temizleme
+- Otomatik dağıtım tespiti (Pardus/Debian/Ubuntu/Arch/Fedora)
+- Güvenli dosya silme (shutil, shell glob yok)
 - Temizlik öncesi/sonrası karşılaştırma
+- Hata raporlama
 - İlerleme çubuğu
 - Koyu tema desteği
 
@@ -31,8 +37,7 @@ cd && git clone https://github.com/385ahmet/pardus-cleaner && cd pardus-cleaner 
 ## .deb Paketi Kurulumu
 
 ```bash
-cd && git clone https://github.com/385ahmet/pardus-cleaner && cd pardus-cleaner && sudo dpkg -i pardus-cleaner_1.0.0-1_all.deb
-cd && cd pardus-cleaner && sudo apt install -f
+cd && git clone https://github.com/385ahmet/pardus-cleaner && cd pardus-cleaner && sudo dpkg -i pardus-cleaner_3.0.0-1_all.deb && sudo apt install -f
 ```
 Yada Pardus ile gelen .deb yükleyiciyi kullanabilirsin.
 
