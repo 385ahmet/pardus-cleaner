@@ -7,6 +7,8 @@ gi.require_version('Gtk', '3.0')
 from gi.repository import Gtk, GLib, Gdk
 from pathlib import Path
 
+APP_VERSION = "3.0"
+
 
 def detect_distro():
     try:
@@ -188,7 +190,7 @@ class PardusCleaner:
         return format_bytes(get_dir_size(dir_path))
 
     def build_ui(self):
-        self.win = Gtk.Window(title="Pardus Cleaner")
+        self.win = Gtk.Window(title=f"Pardus Cleaner v{APP_VERSION}")
         self.win.set_default_size(600, 500)
         self.win.connect("destroy", Gtk.main_quit)
 
